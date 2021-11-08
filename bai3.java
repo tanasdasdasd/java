@@ -31,7 +31,7 @@ public class bai3 {
         //// cần nhân tử hoặc mẫu cho 1.0f cho thành float
         tuThien = (1.0f) * phanTramTuThien / 100 * tongThu;
         conLai = tongThu - tuThien;
-
+        ////ssss
         System.out.println("ten bo phim la" + "\t" + tenPhim);
         System.out.println("Gia ve nguoi lon la" + "\t" + giaVeLon);
         System.out.println("Gia ve tre em la" + "\t" + giaVeNho);
