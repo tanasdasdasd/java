@@ -18,7 +18,7 @@ public class bai4 {
             tienPhat = soTienChuaThanhToan * lai / 100;
         }
         System.out.println("so tien phat la "+tienPhat);
-       
+       //aaaaaaa
         sc.close();
     }
 }
