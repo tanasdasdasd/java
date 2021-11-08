@@ -34,7 +34,8 @@ public class bai3 {
 
         String text = String.format("%-50s", "tên_phim").replace(' ', '.').replace('_', ' ');
         System.out.println(text + tenPhim);
-        System.out.println("Gia ve nguoi lon la" + "\t" + giaVeLon);
+        text = String.format("%-50s", "gia_ve_nguoi_lon").replace(' ', '.').replace('_', ' ');
+        System.out.println(text +giaVeLon);
         System.out.println("Gia ve tre em la" + "\t" + giaVeNho);
         System.out.println("So ve  nguoi lon la" + "\t" + soVeLon);
         System.out.println("So ve  tre em  la" + "\t" + soVeNho);
