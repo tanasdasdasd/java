@@ -25,14 +25,15 @@ public class bai3 {
         soVeNho = Integer.parseInt(sc.nextLine());
         System.out.println("Nhap vao so phan tram tu thien ");
         phanTramTuThien = Integer.parseInt(sc.nextLine());
-        
+
         tongThu = giaVeLon * soVeLon + giaVeNho * soVeNho;
         //// Chú ý chỗ này vì phan tram tu thien va 100 là số nguyên nên sẽ ra 0 vì vậy
         //// cần nhân tử hoặc mẫu cho 1.0f cho thành float
         tuThien = (1.0f) * phanTramTuThien / 100 * tongThu;
         conLai = tongThu - tuThien;
-        ////ssss
-        System.out.println("ten bo phim la" + "\t" + tenPhim);
+
+        String text = String.format("%-50s", "tên_phim").replace(' ', '.').replace('_', ' ');
+        System.out.println(text + tenPhim);
         System.out.println("Gia ve nguoi lon la" + "\t" + giaVeLon);
         System.out.println("Gia ve tre em la" + "\t" + giaVeNho);
         System.out.println("So ve  nguoi lon la" + "\t" + soVeLon);
