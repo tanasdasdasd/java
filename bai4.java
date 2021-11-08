@@ -4,7 +4,7 @@ public class bai4 {
     public static void main(String[] args) {
         float soDuTaiKhoan;
         float tienThanhToanTrongThang;
-        float tienPhat =0;
+        float tienPhat ;
         final float lai = 1.5f;
         float soTienChuaThanhToan;
         Scanner sc = new Scanner(System.in);
@@ -16,8 +16,12 @@ public class bai4 {
 
         if (soTienChuaThanhToan > 0) {
             tienPhat = soTienChuaThanhToan * lai / 100;
+            System.out.println("so tien phat la "+tienPhat);
+        }else{
+            System.out.println("ko co tien phat");
         }
-        System.out.println("so tien phat la "+tienPhat);
+        
+        
        //aaaaaaa
         sc.close();
     }
