@@ -34,8 +34,9 @@ public class bai3 {
         conLai = tongThu - tuThien;
 
         String text ; //String.format("%-50s", "tên_phim").replace(' ', '.').replace('_', ' ');
-        text = String.format("%1$"+NUMBER_CHARACTER + "s", "gia_ve_nguoi_lon").replace(' ', '.').replace('_', ' ');
+        text = String.format("%1$"+NUMBER_CHARACTER + "s", "tên_Phim").replace(' ', '.').replace('_', ' ');
         System.out.println(text + tenPhim);
+        text = String.format("%1$"+NUMBER_CHARACTER + "s", "gia_ve_nguoi_lon").replace(' ', '.').replace('_', ' ');
         System.out.println(text + giaVeLon);
         System.out.println("Gia ve tre em la" + "\t" + giaVeNho);
         System.out.println("So ve  nguoi lon la" + "\t" + soVeLon);
