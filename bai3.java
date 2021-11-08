@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class bai3 {
     public static void main(String[] args) {
+        final int NUMBER_CHARACTER = -50;
         String tenPhim;
         int giaVeLon;
         int giaVeNho;
@@ -32,10 +33,10 @@ public class bai3 {
         tuThien = (1.0f) * phanTramTuThien / 100 * tongThu;
         conLai = tongThu - tuThien;
 
-        String text = String.format("%-50s", "tên_phim").replace(' ', '.').replace('_', ' ');
+        String text ; //String.format("%-50s", "tên_phim").replace(' ', '.').replace('_', ' ');
+        text = String.format("%1$"+NUMBER_CHARACTER + "s", "gia_ve_nguoi_lon").replace(' ', '.').replace('_', ' ');
         System.out.println(text + tenPhim);
-        text = String.format("%-50s", "gia_ve_nguoi_lon").replace(' ', '.').replace('_', ' ');
-        System.out.println(text +giaVeLon);
+        System.out.println(text + giaVeLon);
         System.out.println("Gia ve tre em la" + "\t" + giaVeNho);
         System.out.println("So ve  nguoi lon la" + "\t" + soVeLon);
         System.out.println("So ve  tre em  la" + "\t" + soVeNho);
