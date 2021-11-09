@@ -6,7 +6,7 @@ public class bai8 {
         int y;
         int d;
         int top;
-        boolean flat =true;
+        boolean flat=true;
         int dayofweek;
         Scanner sc = new Scanner(System.in);
         System.out.println("nhập vào ngày : ");
