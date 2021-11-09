@@ -14,9 +14,9 @@ public class bai6 {
         System.out.println("nhap vao don gia ");
         donGia = Float.parseFloat(sc.nextLine());
         if (soLuong >= 100) {
-            thanhTien = 100 * donGia + (soLuong - 100) * 0.88f;
+            thanhTien = 100 * donGia + (soLuong - 100) *donGia* 0.88f;
         } else if (soLuong >= 50 && soLuong <= 100) {
-            thanhTien = 50 * donGia + (soLuong - 50) * 0.92f;
+            thanhTien = 50 * donGia + (soLuong - 50) *donGia* 0.92f;
         } else {
             thanhTien = soLuong * donGia;
         }
