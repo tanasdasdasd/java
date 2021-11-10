@@ -76,11 +76,11 @@ public class bai12 {
     public static float tinhTienTren19km(int loaiGrab, float soKm) {
         float tien = 0;
         if (loaiGrab == 1) {
-            tien = GRAB_CAR_1KM + 18 * GRAB_CAR_UPPER19 + (soKm - 19) * GRAB_CAR_UPPER19;
+            tien = GRAB_CAR_1KM + 18 * GRAB_CAR_1TO_19+ (soKm - 19) * GRAB_CAR_UPPER19;
         } else if (loaiGrab == 2) {
-            tien = GRAB_CAR_1KM + 18 * GRAB_SUR_UPPER19 + (soKm - 19) * GRAB_SUR_UPPER19;
+            tien = GRAB_CAR_1KM + 18 * GRAB_CAR_1TO_19 + (soKm - 19) * GRAB_SUR_UPPER19;
         } else {
-            tien = GRAB_BLACK_1KM + 18 * GRAB_BLACK_UPPER19 + (soKm - 19) * GRAB_BLACK_UPPER19;
+            tien = GRAB_BLACK_1KM + 18 * GRAB_CAR_1TO_19 + (soKm - 19) * GRAB_BLACK_UPPER19;
         }
         return tien;
     }
