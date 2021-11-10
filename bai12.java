@@ -20,12 +20,8 @@ public class bai12 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("chuong trinh bat dau moi ban chon loai grab");
-        int loaiGrab = chonGrab(sc);
-        float soKm = nhapSoKm(sc);
-        int timeWait = thoiGianCho(sc);
-
-        float tienTra = tinhTienTra(loaiGrab, soKm, timeWait);
-        System.out.println("tien tra " + tienTra);
+        
+        System.out.println(tinhTienTra(chonGrab(sc), nhapSoKm(sc), thoiGianCho(sc)));
     }
 
     public static float nhapSoKm(Scanner sc) {
@@ -76,11 +72,11 @@ public class bai12 {
     public static float tinhTienTren19km(int loaiGrab, float soKm) {
         float tien = 0;
         if (loaiGrab == 1) {
-            tien = GRAB_CAR_1KM + 18 * GRAB_CAR_UPPER19 + (soKm - 19) * GRAB_CAR_UPPER19;
+            tien = GRAB_CAR_1KM + 18 * GRAB_CAR_1TO_19+ (soKm - 19) * GRAB_CAR_UPPER19;
         } else if (loaiGrab == 2) {
-            tien = GRAB_CAR_1KM + 18 * GRAB_SUR_UPPER19 + (soKm - 19) * GRAB_SUR_UPPER19;
+            tien = GRAB_CAR_1KM + 18 * GRAB_SUR_1TO_19 + (soKm - 19) * GRAB_SUR_UPPER19;
         } else {
-            tien = GRAB_BLACK_1KM + 18 * GRAB_BLACK_UPPER19 + (soKm - 19) * GRAB_BLACK_UPPER19;
+            tien = GRAB_BLACK_1KM + 18 * GRAB_BLACK_1TO_19 + (soKm - 19) * GRAB_BLACK_UPPER19;
         }
         return tien;
     }
