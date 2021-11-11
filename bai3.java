@@ -30,7 +30,7 @@ public class bai3 {
         tongThu = giaVeLon * soVeLon + giaVeNho * soVeNho;
         //// Chú ý chỗ này vì phan tram tu thien va 100 là số nguyên nên sẽ ra 0 vì vậy
         //// cần nhân tử hoặc mẫu cho 1.0f cho thành float
-        tuThien = (1.0f) * phanTramTuThien / 100 * tongThu;
+        tuThien = (1.0f * phanTramTuThien) / 100 * tongThu;
         conLai = tongThu - tuThien;
 
         String text ; //String.format("%-50s", "tên_phim").replace(' ', '.').replace('_', ' ');

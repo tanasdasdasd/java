@@ -16,7 +16,7 @@ public class bai6 {
         if (soLuong >= 100) {
             thanhTien = 100 * donGia + (soLuong - 100) *donGia* 0.88f;
         } else if (soLuong >= 50 && soLuong <= 100) {
-            thanhTien = 50 * donGia + (soLuong - 50) *donGia* 0.92f;
+            thanhTien = 50 * donGia + (soLuong - 50) * donGia * 0.92f;
         } else {
             thanhTien = soLuong * donGia;
         }

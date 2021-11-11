@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
 public class bai10 {
-    public static void chanLe(int a){
+    public static boolean chanLe(int a){
         
         if(a%2==0){
-            System.out.println("a la so chan ");
+           return true;
         }else{
-            System.out.println("a la so le ");
+           return false;
         }
         
     }

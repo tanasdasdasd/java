@@ -89,7 +89,7 @@ public class bai12 {
             int soLanTinh = Math.round((1.0f * timeWait) / 3);
             if (loaiGrab == 1) {
                 tien = soLanTinh * GRAB_CAR_WAIT;
-            } else if (loaiGrab == 2) {
+            } else if (loaiGrab == 2) { 
                 tien = soLanTinh * GRAB_SUR_WAIT;
             } else {
                 tien = soLanTinh * GRAB_BLACK_WAIT;
