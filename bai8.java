@@ -52,7 +52,7 @@ public class bai8 {
             y -= a;
             m += 12 * a - 2;
             dayofweek = (d + y + y / 4 - y / 100 + y / 400 + (31 * m) / 12) % 7;
-            if (dayofweek == 0) {
+           if (dayofweek == 0) {
                 System.out.println("la ngay chu nhat");
             } else {
                 int thu = dayofweek + 1;
