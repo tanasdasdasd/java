@@ -11,8 +11,8 @@ public class bai21 {
       System.out.println("tong cac so chan la " + tong);
       int soKhongAm = demCacSoAm(a);
       System.out.println(" co " + soKhongAm + "so  am");
-      float tongAm=tongCacSoAm(a);
-      System.out.println(" tong cac so am la "+tongAm);
+      float tongAm = tongCacSoAm(a);
+      System.out.println(" tong cac so am la " + tongAm);
    }
 
    public static int[] nhapMang(int n, Scanner sc) {
@@ -52,11 +52,12 @@ public class bai21 {
       }
       return dem;
    }
-   public static float tongCacSoAm(int a[]){
-      float tong =0;
+
+   public static float tongCacSoAm(int a[]) {
+      float tong = 0;
       for (int i : a) {
-         if(i<0)
-         tong+=i;
+         if (i < 0)
+            tong += i;
       }
       return tong;
    }

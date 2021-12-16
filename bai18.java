@@ -26,5 +26,6 @@ public class bai18 {
             i++;
         }
         System.out.println(tong);
+        sc.close();
     }
 }

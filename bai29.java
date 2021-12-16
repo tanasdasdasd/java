@@ -51,11 +51,21 @@ public class bai29 {
                 System.out.println("ban da nhap sai moi ban nhap lai ");
             }
         } while (index < 0 || index >= a.length);
-        for (int i = 0, j = 0; j < a.length - 1; i++, j++) {
-            if (j == index) {
-                j++;
+        
+        // int j = 0;
+        // for (int i = 0; i < a.length - 1; i++) {
+        //     if (i == index) {
+        //         j++;
+        //     }
+        //     b[i] = a[j++];
+        // }
+
+        int i = 0;
+        for (int j = 0; j < a.length - 1; j++) {
+            if (j== index) {
+                i++;
             }
-            b[i] = a[j];
+            b[j] = a[i++];
         }
         a = b;
         return a;
